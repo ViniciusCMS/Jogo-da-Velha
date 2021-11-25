@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+    <h1>Jogo da Velha</h1><!--Titulo-->
+
+    <div>
+        <div id="1" class="quadrado" onclick="aoClicar(this.id)">-</div>
+        <div id="2" class="quadrado" onclick="aoClicar(this.id)">-</div>
+        <div id="3" class="quadrado" onclick="aoClicar(this.id)">-</div>
+    </div><!--Quadrado 1a3-->
+
+    <div>
+        <div id="4" class="quadrado" onclick="aoClicar(this.id)">-</div>
+        <div id="5" class="quadrado" onclick="aoClicar(this.id)">-</div>
+        <div id="6" class="quadrado" onclick="aoClicar(this.id)">-</div>
+    </div><!--Quadrado 4a6-->
+    
+    <div>
+        <div id="7" class="quadrado" onclick="aoClicar(this.id)">-</div>
+        <div id="8" class="quadrado" onclick="aoClicar(this.id)">-</div>
+        <div id="9" class="quadrado" onclick="aoClicar(this.id)">-</div>
+    </div><!--Quadrado 7a9-->
+
+    <div class="playerTurn">
+        <label>Turno:</label>
+        <label id="turno"></label>
+    </div><!--Placar de turno-->
+
+    <div class="winner">
+        <label>Vencendor:</label>
+        <label id="vencedor"></label>
+    </div><!--Placar de vencedor-->
+
+    <div>
+        <button onclick="restart()">Reiniciar</button>
+    </div><!--Botão de restart-->
+
+</body>
+<script src="script.js"></script>
+</html>
